@@ -33,3 +33,9 @@ python py_scripts/git_*.py
 git_*.cmd
 git_*.py
 ```
+
+# 效果演示
+
+## git_history
+
+![image-20220225181815386](.assets/image-20220225181815386.png)
