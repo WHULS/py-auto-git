@@ -64,6 +64,7 @@ if __name__ == '__main__':
         exit()
 
     last = repo[repo.head.target]
+    i = 1
     for commit in repo.walk(last.id, git.GIT_SORT_TIME | git.GIT_SORT_REVERSE):
         hash = blue(str(commit.id)[0:10] + '...')
         _time = yellow(time.strftime('%Y年%m月%d日 %H:%M:%S',
@@ -109,12 +110,13 @@ if __name__ == '__main__':
 
         msg = commit.message.replace('\n', '')
         print(
-            '{hash} {time} {author} {new_lines} {rmv_lines} {msg}'.format(
-                hash=hash, time=_time, msg=msg,
+            '{id}. {hash} {time} {author} {new_lines} {rmv_lines} {msg}'.format(
+                id=i, hash=hash, time=_time, msg=msg,
                 author=gray('{name}[{email}]'.format(name=name, email=email)),
                 new_lines=green('+{:d}'.format(new_lines)),
                 rmv_lines=red('-{:d}'.format(rmv_lines)),
             )
         )
+        i += 1
         for item in files_changed:
-            print(item)
+            print(' ', item)
