@@ -36,6 +36,16 @@ git_*.py
 
 # 效果演示
 
+## git_push
+
+![image-20220225181943487](imgs/image-20220225181943487.png)
+
 ## git_history
 
-![image-20220225181815386](.assets/image-20220225181815386.png)
+one-line:
+
+![image-20220225182131096](imgs/image-20220225182131096.png)
+
+full:
+
+![image-20220225182022576](imgs/image-20220225181815386.png)
