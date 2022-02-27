@@ -3,6 +3,10 @@ from colorama import init
 import os
 import pygit2 as git
 
+# 处理命令行输入中文
+import locale
+locale.setlocale(locale.LC_CTYPE, 'chinese')
+
 # 处理cmd颜色
 init(autoreset=True)
 
