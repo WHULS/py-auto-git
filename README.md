@@ -49,4 +49,3 @@ one-line:
 full:
 
 ![image-20220225182022576](imgs/image-20220225181815386.png)
-
