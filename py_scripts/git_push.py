@@ -1,5 +1,6 @@
 from colorama import init
 import os
+import sys
 import time
 import pygit2 as git
 
@@ -85,7 +86,7 @@ def get_current_branch(repo: git.Repository):
 
 if __name__ == '__main__':
     # 读取仓库信息
-    repo_path = os.getcwd()
+    repo_path = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
     try:
         repo = git.Repository(repo_path)
     except:

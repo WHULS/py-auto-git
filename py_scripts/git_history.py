@@ -1,3 +1,4 @@
+import sys
 import time
 from colorama import init
 import os
@@ -48,16 +49,16 @@ def get_current_branch(repo: git.Repository):
 
 
 if __name__ == '__main__':
-    bFull = input('是否完整显示? [y/N]')
-    bFull = True if bFull == 'y' else False
-
     # 读取仓库信息
-    repo_path = os.getcwd()
+    repo_path = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
     try:
         repo = git.Repository(repo_path)
     except:
         print(red('[{:s}]不是一个git仓库').format(repo_path))
         exit()
+
+    bFull = input('是否完整显示? [y/N]')
+    bFull = True if bFull == 'y' else False
 
     if repo.head_is_unborn:
         print(gray('该仓库未发生过提交'))
