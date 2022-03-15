@@ -223,7 +223,8 @@ if __name__ == '__main__':
                 print('\n正在推送远程仓库[{:s}]: {:s}'.format(
                     blue(remote.name), green(remote.url)))
                 # remote.push([repo.head.name])  # 不支持ssh，懒得搞了，草
-                os.system('git push {:s} {:s}'.format(remote.name, cur_branch))
+                os.system('cd {:s} && git push {:s} {:s}'.format(
+                    repo_path, remote.name, cur_branch))
                 print(yellow('ok'))
             except Exception as e:
                 print(gray('失败: {:s}').format(red(str(e))))
