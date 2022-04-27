@@ -11,6 +11,7 @@
 |git_fetch.py|获取所有远程仓库|
 |git_branch.py|查看所有分支|
 |git_remote.py|查看远程仓库列表|
+|git_merge.py|合并分支|
 
 # 运行
 
