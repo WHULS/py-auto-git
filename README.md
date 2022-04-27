@@ -1,5 +1,7 @@
 # py-auto-git
 
+> https://www.pygit2.org/
+
 基于pygit2的python自动化脚本
 
 |脚本|功能|
@@ -24,8 +26,13 @@ python py_scripts/git_*.py
 
 ## 依赖
 
-- pygit2 - 操作git仓库
-- colorama - 在命令行显示颜色
+|名称|作用|安装|
+|---|----|----|
+|pygit2|操作git仓库|`pip install pygit2`|
+|colorama|在命令行显示颜色|`pip install colorama`|
+|terminal_layout|命令行交互UI（列表选择）|`pip install terminal-layout`|
+
+一键安装依赖：`pip install -r requirements.txt`
 
 # 安装与部署
 
