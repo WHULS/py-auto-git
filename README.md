@@ -2,9 +2,13 @@
 
 基于pygit2的python自动化脚本
 
-- git_push.py 自动push
-- git_history.py 查看历史记录
-- ...
+|脚本|功能|
+|---|---|
+|git_push.py|自动push|
+|git_history.py|查看历史记录|
+|git_fetch.py|获取所有远程仓库|
+|git_branch.py|查看所有分支|
+|git_remote.py|查看远程仓库列表|
 
 # 运行
 
@@ -49,3 +53,15 @@ one-line:
 full:
 
 ![image-20220225182022576](imgs/image-20220225181815386.png)
+
+## git_fetch
+
+![image-20220427221817476](imgs/image-20220427221817476.png)
+
+## git_branch
+
+![image-20220427221504032](imgs/image-20220427221504032.png)
+
+## git_remote
+
+![image-20220427221615566](imgs/image-20220427221615566.png)
