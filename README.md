@@ -73,3 +73,7 @@ full:
 ## git_remote
 
 ![image-20220427221615566](imgs/image-20220427221615566.png)
+
+## git_merge
+
+![image-20220428034104412](imgs/image-20220428034104412.png)

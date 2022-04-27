@@ -106,7 +106,7 @@ if __name__ == '__main__':
         ))
 
     try:
-        idx = int(input(green('请输入：')))
+        idx = int(input('请输入：'))
         if idx < 0 or idx >= len(all_info):
             raise Exception('序号不在范围内')
     except Exception as e:
