@@ -80,7 +80,7 @@ if __name__ == '__main__':
     cur_branch = repo.branches[cur]
     print('- {cur_branch_name}\t{hash} {msg}'.format(
         cur_branch_name=green(cur),
-        hash=str(cur_branch.target)[0:7],
+        hash=gray(str(cur_branch.target)[0:7]),
         msg=repo[cur_branch.target].message
     ))
 
